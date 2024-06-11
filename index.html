@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aanchal Tailwal</title>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- FAVICON -->
+  <link class="favicon" rel="icon" type="image/img" sizes="32x32" href="images/favicon-32x32.png">
+
+  <!-- Google material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+   <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/b6402cf79a.js" crossorigin="anonymous"></script>
+
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("{{YOUR USER KEY}}");
+    })();
+  </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">My<span> Portfolio </span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">INTRO</a></li>
+          <li><a href="#about" class="menu-btn">ABOUT</a></li>
+          <li><a href="#services" class="menu-btn">WORK</a></li>
+          <li><a href="#skills" class="menu-btn">SKILLS</a></li>
+          <li><a href="#contact" class="menu-btn">CONTACT</a></li>
+          
+        </ul>
+        
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+  <!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-content" data-aos="fade-up">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Aanchal Tailwal </div>
+                <div class="text-3">I am <span class="typing"></span></div>
+            </div>
+            <div class="image-container">
+              <img src="images/girl.png" alt="Your Image">
+          </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title" data-aos="fade-down">About Me</h2>
+        <div class="about-content">
+            <div class="column left" data-aos="fade-right">
+                <img src="images/Aanchal Tailwal.jpg" alt="" />
+            </div>
+            <div class="column right" data-aos="fade-up">
+                <div class="text">
+                    I'm Aanchal Tailwal and I am <span class="typing-2"></span>
+                </div>
+                <p class="paragraph">
+                    Welcome to my portfolio! I am Aanchal Tailwal, a devoted and enthusiastic Computer Science Engineer with a focus on DevOps. Based in Dehradun, Uttarakhand, I am currently pursuing my Bachelor's degree at the University of Petroleum and Energy Studies, where I proudly maintain a commendable CGPA of 8.70/10. This portfolio showcases my journey, skills, experiences, and the projects that have contributed to my development as a developer.
+                    My academic path has been both demanding and fulfilling. Studying Computer Science Engineering with a specialization in DevOps has provided me with a solid grounding in both the theoretical and practical elements of software development and operations. Through my coursework and projects, I have sharpened my abilities in various programming languages, cloud technologies, and DevOps tools, creating a strong foundation for my professional career.
+                    In addition to my programming expertise, I have a good grasp of web development technologies such as HTML5, CSS, and JavaScript. I have hands-on experience designing and building responsive, user-friendly websites and am acquainted with testing frameworks. Moreover, I have worked with databases using MySQL.
+                    My technical skills, coupled with my passion for problem-solving, make me a valuable member of any team. I am quick to learn new technologies and always eager to tackle new challenges. I am confident that my skills and determination will drive my success in the tech industry.
+                </p>
+                <a href="https://drive.google.com/file/d/1PDQUeSxg350KaAnhyOsVaqWnwwikAF70/view?usp=drivesdk" target="_blank">Download Resume</a>
+            </div>
+        </div>
+        <Br>
+          <Br>
+            <Br>
+              <Br>
+                <Br>
+                  <div class="about-experience">
+                    <div class="row heading-block aos-init" data-aos="fade-up">
+                        <div class="column large-full"></div>
+                        <h2 class="section-heading">Education</h2>
+                    </div>
+                    <br><br><br><br><br><Br><Br><Br><Br>
+                    <div class="row about-experience_timeline">
+                        <div class="column tab-full aos-init aos-animate" data-aos="fade-up">
+                            <div class="timeline">
+                              <div class="timeline_icon-wrap">
+                                <span class="timeline_icon">
+                                  <i class="fa-solid fa-graduation-cap"></i><!-- Font Awesome icon -->
+                                </span>
+                            </div>
+                            
+                                <div class="timeline_block">
+                                    <div class="timeline_bullet">X</div>
+                                    <div class="timeline_header">
+                                        <div class="timeline_timeframe">Aug 2021 - May 2025</div>
+                                        <h1 class="item-title">University of Petroleum and Energy Studies, Dehradun</h1>
+                                        <h3>Bachelor's Degree</h3>
+                                    </div>
+                                    <div class="timeline_desc">
+                                        <p>I am about to complete my Bachelor's degree in Computer Science, majoring in DevOps with a minor in AI/ML. Throughout my studies, I have built a solid foundation in core computer science principles, including algorithms, data structures, and computer operating systems and architecture. My proficiency in programming languages such as C, Java, and Python has been honed through various projects, where I applied theoretical knowledge to practical scenarios. In addition to programming, I have gained hands-on experience with several DevOps tools, including Docker, Kubernetes, and Jenkins. These experiences have thoroughly prepared me to excel in the computer science field. Furthermore, my academic performance has been strong, with a current CGPA of 8.7, reflecting my dedication and understanding of the subject matter.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline_block">
+                                    <div class="timeline_bullet">X</div>
+                                    <div class="timeline_header">
+                                        <div class="timeline_timeframe">Apr 2020 - Apr 2021</div>
+                                        <h1 class="item-title">PYDS Learning Academy</h1>
+                                        <h3>XIIth</h3>
+                                    </div>
+                                    <div class="timeline_desc">
+                                        <p>During my 12th grade, I developed a keen interest in Mathematics, Computer Science, and Physics. Alongside academics, I actively participated in sports and extracurricular activities such as dancing and debating. This period of my education provided a comprehensive foundation and allowed me to explore and identify my passions and interests.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline_block">
+                                    <div class="timeline_bullet">X</div>
+                                    <div class="timeline_header">
+                                        <div class="timeline_timeframe">Apr 2018 - Apr 2019</div>
+                                        <h1 class="item-title">Jaswant Modern Sr. Sec. School</h1>
+                                        <h3>Xth</h3>
+                                    </div>
+                                    <div class="timeline_desc">
+                                        <p>During my 10th grade, I found myself drawn to subjects like Mathematics and Science, which laid the groundwork for my future academic pursuits. I also took part in various extracurricular activities, such as school clubs and sports, which helped me develop a well-rounded skill set and fostered my love for learning and teamwork. This formative period was crucial in shaping my academic and personal growth.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                
+
+
+  <!-- work Section -->
+  <section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title" data-aos="fade-down">My Projects</h2>
+        <div class="serv-content">
+            <div class="card" data-aos="flip-left">
+                <div class="box">
+                    <!--<i class="fas fa-laptop-code"></i>     -->              
+                    <a href="project1.html">
+                        <img src="images/CareerCompass.jpg" alt="Project 1" class="project-img">
+                    </a>
+                    <div class="text"><p>Career Compass</p></div>
+                    <div class="project-name">AI Based resume parser and automated job recommendation system</div>
+                    
+                </div>
+            </div>
+            <div class="card" data-aos="flip-left">
+              <div class="box">
+                  <!--<i class="fas fa-mobile-alt"></i>-->
+                  
+                  <a href="project2.html">
+                      <img src="images/landf.png" alt="Project 3" class="project-img">
+                  </a>
+                  <div class="text">Lost and Found Web Application</div>
+                  <div class="project-name">One stop solution for university lost and found department</div>
+                  
+              </div>
+          </div>
+            <div class="card" data-aos="flip-left">
+              <div class="box">
+                  <!--<i class="fas fa-mobile-alt"></i>-->
+                  
+                  <a href="project3.html">
+                      <img src="images/SwiftAI.jpg" alt="Project 3" class="project-img">
+                  </a>
+                  <div class="text">Swift-AI Bot</div>
+                  <div class="project-name">versatile bot with object and video detection, intelligent content search, and drawing capabilities, 
+                    enhancing user interaction and engagement.</div>
+                  
+              </div>
+          </div>
+
+            <div class="card" data-aos="flip-left">
+                <div class="box">
+                   <!-- <i class="fas fa-code"></i>-->
+                    
+                    <a href="project4.html">
+                        <img src="images/AIBotwithVoiceAss.jpg" alt="Project 2" class="project-img">
+                    </a>
+                    <div class="text">AI Bot with Voice Assistant</div>
+                    <div class="project-name">Multilingual AI-powered voice assistant and innovative educational bot</div>
+                    
+                </div>
+            </div>
+
+
+            
+        </div>
+        
+    </div>
+</section>
+
+
+  <!-- skills section services -->
+  <section class="skills" id="skills">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">Skills & Experiences</h2>
+      <div class="skills-content">
+        <div class="column left">
+          <div class="text">My creative skills & experiences.</div>
+          <p class="paragraph-2">
+            My creative skills and experiences reflect a comprehensive blend of technical proficiency and 
+            a passion for continuous learning. With a strong foundation in programming and web development, 
+            I have honed my ability to solve complex problems and build innovative solutions. My journey 
+            through various technical domains has equipped me with the versatility to adapt to different 
+            challenges and environments. Beyond technical expertise, I am dedicated to fostering collaboration
+            and effective communication within teams, ensuring that projects not only meet technical 
+            standards but also align with strategic goals. This holistic approach allows me to contribute 
+            effectively to any project, driving both individual and organizational success. Additionally, 
+            I am constantly exploring emerging technologies to stay ahead of industry trends. My commitment 
+            to personal and professional growth underscores my ability to deliver exceptional results in a 
+            rapidly evolving tech landscape.
+          </p>
+          <a href="#about">Read More</a>
+        </div>
+        <div class="column right skill-box">
+          <div class="img">
+            <img src="images/skill.jpg" alt="css" id="css-icon" data-aos="flip-left">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shadow-overlay"></div>
+    <div class="row heading-block center" data-aos="fade-up"><br><br>
+      <h2 class="title">My Skills</h2>
+    </div>
+    <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+      <div class="column item-service aos-init aos-animate" data-aos="fade-up">
+        <div class="item-service content">
+          <h4 class="item-title">01. Programming</h4>
+          <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>BashScript</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column item-service aos-init aos-animate" data-aos="fade-up">
+        <div class="item-service content">
+          <h4 class="item-title">02. Technical Skills</h4>
+          <ul>
+            <li>Git</li>
+            <li>Database Management</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Operating System</li>
+            <li>Computer Networks</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column item-service aos-init aos-animate" data-aos="fade-up">
+        <div class="item-service content">
+          <h4 class="item-title">03. Web Development</h4>          <ul>
+            <li>HTML/CSS</li>
+            <li>ReactJS</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column item-service aos-init aos-animate" data-aos="fade-up">
+        <div class="item-service content">
+          <h4 class="item-title">04. Tools & Framewors</h4>
+          <ul>
+            <li>Docker</li>
+            <li>Jenkins</li>
+            <li>Kubernetes</li>
+            <li>Maven</li>
+            <li>Nexus</li>
+            <li>Selenium</li>
+            <li>TestNG</li>
+            <li>Vs Code</li>
+          </ul>
+        </div>
+      </div>
+      <div class="column item-service aos-init aos-animate" data-aos="fade-up">
+        <div class="item-service content">
+          <h4 class="item-title">05. Soft Skills</h4>
+          <ul>
+            <li>Teamwork</li>
+            <li>Determine</li>
+            <li>Resilient</li>
+            <li>Problem-Solving</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">I'm happy to connect, listen, and help. Let's work together and build something awesome.
+            Let's turn your idea into an even greater product.</p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Aanchal Tailwal</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Conatact Number</div>
+                <div class="sub-title">+91 9149289913</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">tailwalaanchal@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">Aanchal Tailwal</a> | <span class="far fa-copyright"> </span> <script>document.write(new Date().getFullYear())</script> All rights reserved.
+        <div>
+          <a href="https://www.linkedin.com/in/aanchal-tailwal-73a45a227/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/aanchaltailwal"><i class="fab fa-github"></i></a>
+          <a href="https://github.com/aanchaltailwal"><i class="fab fa-telegram"></i></a>
+          
+        </div>
+      </span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+</body>
+
+</html>
