@@ -61,7 +61,7 @@ body{
 
 .navbar .logo a {
     color: #cf7878;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     
 }
@@ -89,7 +89,7 @@ body{
 
 .navbar .menu li a {
  
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s;
@@ -126,7 +126,7 @@ body{
 
 .menu-btn{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
     display: none;
 }
@@ -147,24 +147,26 @@ body{
 .home .max-width {
     flex: 1; /* Allow max-width to take available space */
     margin-left: 40px; /* Adjust as needed */
+    
 }
 
 .home .max-width .home-content {
     padding-top: 220px;
+    max-width: 600px; /* Limit the width of the text content */
 }
 
 .home .home-content .text-1 {
-    font-size: 27px;
+    font-size: 20px;
 }
 
 .home .home-content .text-2 {
-    font-size: 75px;
+    font-size: 50px;
     font-weight: 600;
     margin-left: -3px;
 }
 
 .home .home-content .text-3 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 5px 0;
 }
 
@@ -172,29 +174,39 @@ body{
     color: #cf7878;
     font-weight: 500;
 }
-
 .image-container {
     display: flex;
     align-items: right; /* Center image vertically */
-    justify-content: right; /* Center image horizontally */
-    margin-right: -650px; /* Adjust as needed */
+    justify-content: right; /* Push image to the left */
+    width: 70%; /* Adjust the width as needed */
+    margin-left: 820px; /* Adjust as needed */
+    margin-right: 10px; /* Create space between image and text content */
     flex: 0 0 auto; /* Ensure it doesn’t shrink or grow */
-    height:auto;
-    margin-top: -250px; /* Move image upward */
+    height: auto;
+    margin-top: 70px; /* Move image upward */
+    position: absolute; /* Position the image absolutely */
+    left: 20px; /* Adjust the left position as needed */
+    top: 50%; /* Align the top of the image to the middle of the screen */
+    transform: translateY(-50%); /* Adjust to vertically center the image */
+    width: 430px; /* Adjust the width as needed */
+    height: auto;
 }
 
 .image-container img {
-    max-width: 100%;
-    height: 600px;
+    width: 100%; /* Ensure the image fills its container */
+    height: auto;
     border-radius: 10px; /* Optional: for rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: for shadow effect */
 }
 
 
+
+
 /* all similar styling */
 section{
-    padding: 120px 0;
+    padding: 10px 0;
     padding-bottom: 300px;
+    padding-left: 10px;
 }
 .about, .services, .skills, .contact, footer{
     font-family: 'Poppins',sans-serif;
@@ -209,9 +221,10 @@ section .title{
     position: relative;
     text-align: center;
     color: #cf7878;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 80px;
+    margin-top: 40px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -229,7 +242,7 @@ section .title::after{
     position: absolute;
     bottom: -14px;
     left: 50%;
-    font-size: 20px;
+    font-size: 15px;
     color: #cf7878;
     padding: 5px;
     background: black;
@@ -239,7 +252,7 @@ section .title::after{
 
 .about {
     background: url("images/white.jpg");
-    background-size: 2000px;
+    background-size: auto;
 }
 .about .title::after {
     content: "Who I am";
@@ -255,8 +268,8 @@ section .title::after{
     justify-content: flex-end; /* Align image to the right within the left section */
 }
 .about .about-content .left img {
-    height: 450px; /* Increased image size */
-    width: 450px;
+    height: 400px; /* Increased image size */
+    width: 400px;
     object-fit: cover;
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -280,7 +293,7 @@ section .title::after{
 }
 .about .about-content .right .paragraph {
     color: black;
-    font-size: 18px;
+    font-size: 15px;
 }
 .about .about-content .right .p {
     text-align: justify;
@@ -290,7 +303,7 @@ section .title::after{
     background: none;
     color: #cf7878;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     padding: 5px 30px;
     border-radius: 6px;
@@ -304,10 +317,10 @@ section .title::after{
 
 /* New CSS for education section */
 .about-experience .section-heading {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom: 20px;
     position: relative;
-    left: -300px; /* Adjust this as needed */
+    left: -0px; /* Adjust this as needed */
     box-sizing: border-box;
 }
 
@@ -330,8 +343,8 @@ section .title::after{
 .timeline {
     position: relative;
     padding-left: 40px;
-    width: 1700px; /* Adjust the width as needed */
-    left: -300px; /* Adjust this as needed */
+    width: auto; /* Adjust the width as needed */
+    left: -50px; /* Adjust this as needed */
     box-sizing: border-box; /* Ensure padding and border are included in the width and height */
 }
 
@@ -343,13 +356,14 @@ section .title::after{
 
 .timeline_icon {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: #cf7878;
     border-radius: 50%;
-    font-size: 50px; /* Adjust the font size of the icon */
+    font-size: 35px; /* Adjust the font size of the icon */
     text-align: center; /* Center the icon horizontally */
-    line-height: 100px; /* Center the icon vertically */
+    line-height: 75px; /* Center the icon vertically */
+
 }
 
 .timeline_block {
@@ -384,12 +398,12 @@ section .title::after{
 }
 
 .timeline_timeframe {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #999;
 }
 
 .timeline_desc {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #333;
 }
 
@@ -453,17 +467,17 @@ section .title::after{
     color: #cf7878;
 }
 .services .serv-content .card .text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
 .services .serv-content .card .project-img {
-    width: 100%;
+    width: 70%;
     border-radius: 16px;
     margin: 10px 0;
 }
 .services .serv-content .card .project-name {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     margin: 10px 0;
 }
@@ -479,26 +493,26 @@ section .title::after{
 }
 
 .project-header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #cf1767 ;
 }
 
 .project-logo {
-    width: 685px;
+    width: 385px;
     margin-top: 10px;
 }
 
 .project-name {
-    font-size: 2rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 4px;
 }
 
 .project-content {
-    margin-top: 20px;
+    margin-top: 4px;
 }
 
 .project-content h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -543,16 +557,16 @@ section .title::after{
 
 .skills .skills-content .left .text {
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-left: -210px;
+    margin-left: -20px;
 }
 
 .skills .skills-content .left .paragraph-2 {
-    font-size: 20px;
+    font-size: 15px;
     color: black;
-    margin-left: -210px;
+    margin-left: -20px;
 }
 
 .skills .skills-content .left .p {
@@ -564,8 +578,8 @@ section .title::after{
     background: none;
     color: #cf7878;
     margin-top: 30px;
-    margin-left: -210px;
-    font-size: 22px;
+    margin-left: -20px;
+    font-size: 15px;
     font-weight: 500;
     padding: 5px 30px;
     border-radius: 6px;
@@ -577,22 +591,10 @@ section .title::after{
     color: black;
 }
 
-.skills .skills-content .right .icons {
-    font-size: 50px;
-    color: #cf7878;
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
+.skills .skills-content .img img {
+    width: 500px; /* Adjust the width as needed */
+    height: 300px; /* Let the height adjust proportionally */
     transition: all 0.3s ease;
-    padding-top: 20px;
-}
-
-.skills .skills-content .right .icons img {
-    width: 530px;
-    height: 30px;
-    transition: all 0.3s ease;
-    color: #cf7878;
 }
 
 .skills .skills-content .right .icons img:hover {
@@ -627,7 +629,7 @@ section .title::after{
 }
 
 .s-services .heading-block.center .title {
-    font-size: 36px;
+    font-size: 16px;
     color: #cf7878;
     position: relative;
     display: inline-block;
@@ -637,7 +639,7 @@ section .title::after{
 .s-services .heading-block.center .title::after {
     content: "";
     display: block;
-    width: 50px;
+    width: 30px;
     height: 2px;
     background: #cf7878;
     position: absolute;
@@ -663,13 +665,13 @@ section .title::after{
 }
 
 .item-service .item-title {
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     margin-bottom: 15px;
 }
 
 .item-service p {
-    font-size: 16px;
+    font-size: 10px;
     color: black;
     margin-bottom: 15px;
 }
@@ -887,7 +889,7 @@ footer span a{
 }
 footer i{
     padding-left: 10px;
-    font-size: 55px;;
+    font-size: 50px;;
     color: black;
     transition: color 0.3s ease;
 }
@@ -895,7 +897,7 @@ footer span a:hover{
     color: #cf7878;
 }
 footer i{
-    font-size: 40px;
+    font-size: 30px;
 }
 footer i:hover{
     color:#cf7878;
